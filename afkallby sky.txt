@@ -1,0 +1,27 @@
+spawn(function()
+    while true do wait()
+        pcall(function()
+if game.PlaceId == 4996049426 then
+local ts = game:GetService("TeleportService")
+local p = game:GetService("Players").LocalPlayer
+ts:Teleport(5552815761, p)
+elseif game.PlaceId == 5552815761 then
+local click1
+local VirtualUser = game:GetService("VirtualUser")
+spawn(function()
+    while true do
+            wait()
+        pcall(function()
+     VirtualUser:CaptureController()
+       VirtualUser:SetKeyDown("w",key)
+        wait()
+        VirtualUser:CaptureController()
+        VirtualUser:SetKeyUp("w",key)
+            end)
+
+    end
+end)
+end
+end)
+end
+end)
